@@ -12,7 +12,7 @@ const routes = [{
   meta: {
     title: '首页'
   },
-  component: () => import(/* webpackChunkName: "home" */ '../view/Home.vue')
+  component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
 }, {
   path: '/playGround',
   name: 'playGround',
@@ -20,11 +20,11 @@ const routes = [{
     title: '练习场'
   },
   redirect: '/playGround/refAndReactive',
-  component: () => import(/* webpackChunkName: "playGround" */ '../view/playGround/Index.vue'),
+  component: () => import(/* webpackChunkName: "playGround" */ '../views/playGround/Index.vue'),
   children: [{
     path: '/playGround/refAndReactive',
     name: 'refAndReactive',
-    component: () => import(/* webpackChunkName: "playGround" */ '../view/playGround/RefAndReactive.vue')
+    component: () => import(/* webpackChunkName: "playGround" */ '../views/playGround/RefAndReactive.vue')
   }]
 }]
 

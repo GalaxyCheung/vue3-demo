@@ -26,6 +26,20 @@ const routes = [{
     name: 'refAndReactive',
     component: () => import(/* webpackChunkName: "playGround" */ '../views/playGround/RefAndReactive.vue')
   }]
+}, {
+  path: '/piniaTest',
+  name: 'piniaTest',
+  meta: {
+    title: 'pinia'
+  },
+  component: () => import(/* webpackChunkName: "test" */ '../views/piniaTest/PiniaTest.vue')
+}, {
+  path: '/xlsxTest',
+  name: 'xlsxTest',
+  meta: {
+    title: 'pinia'
+  },
+  component: () => import(/* webpackChunkName: "test" */ '../views/xlsxTest/XlsxTest.vue')
 }]
 
 // 1. 创建 router 实例，然后传 `routes` 配置

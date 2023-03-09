@@ -8,7 +8,15 @@
       </router-link>
     </div>
 
-    {{ launch }}
+    <div>
+      <div>launch:</div>
+      {{ launch }}
+    </div>
+
+    <div>
+      <div>user:</div>
+      {{ user }}
+    </div>
 
     <router-view />
   </div>
@@ -30,6 +38,14 @@ export default {
             rocket_name
             rocket_type
           }
+        }
+      }
+    `,
+    user: gql`
+      query {
+        user {
+          user_id
+          user_name
         }
       }
     `,

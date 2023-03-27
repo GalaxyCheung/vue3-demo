@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
-import { createApolloProvider } from '@vue/apollo-option'
-import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core'
-import './assets/styles/global.scss'
+import { createApolloProvider } from '@vue/apollo-option';
+import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core';
+import './assets/styles/global.scss';
 import { createPinia } from "pinia";
 const pinia = createPinia();
 
